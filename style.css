@@ -1,0 +1,154 @@
+* {
+  background-color: #161513;
+}
+
+.nav-bar {
+  background-color: #222222;
+  display: flex;
+  height: 62px;
+  width: 100%;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+.nav-bar-button {
+  border: none;
+  background-color: #222222;
+  color: #fff;
+  font-size: 20px;
+}
+
+.profile-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5% auto;
+}
+
+.profile-image-detail {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.profile-intro-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: #fff;
+  margin: 2% 10%;
+}
+
+.profile-intro-sub {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #c5c5c5;
+  font-size: 18px;
+  margin: 3% 10%;
+  line-height: 25px;
+}
+
+.card-intro {
+  color: #ff8660;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: 30px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 2%;
+  color: #fff;
+  width: 20%;
+  height: 20%;
+  background-color: #8491a0;
+  border-bottom-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+}
+
+.card-image {
+  width: 50%;
+  height: 30%;
+  margin: 3% auto;
+}
+
+.card-shape {
+  background-color: #8491a0;
+
+  margin: 10% 10%;
+}
+
+.card-title {
+  background-color: #8491a0;
+  font-size: 20px;
+  margin: 3% auto;
+}
+
+.card-content {
+  font-size: 15px;
+  color: #c5c5c5;
+  line-height: 20px;
+  background-color: #8491a0;
+}
+
+.blog-intro {
+  color: #5badff;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: 30px;
+}
+
+.blog-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 3% auto;
+}
+
+.blog {
+  display: flex;
+  color: #fff;
+  width: 70%;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1% auto;
+}
+
+.blog-title {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-date {
+  color: #c5c5c5;
+  font-size: 12px;
+}
+
+.blog-content {
+  color: #c5c5c5;
+  font-size: 12px;
+  margin: 0px;
+  line-height: 20px;
+}
