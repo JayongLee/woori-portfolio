@@ -152,7 +152,7 @@ p {
 }
 
 .project {
-  margin: 1% 5%;
+  margin: 1% 5% 3%;
 }
 
 .project-header{
@@ -245,7 +245,6 @@ p {
   justify-content: flex-end;
   padding: 0 6px 6px 0;
 }
-
 
 .project-thumbnail {
   width: 90px;
@@ -352,6 +351,10 @@ p {
   margin: 3% 5%;
 }
 
+.others-type {
+  margin-right: 5%;
+}
+
 .others-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -389,10 +392,22 @@ p {
 }
 
 .others-description {
+  display: flex;
+  flex-direction: column;
   color: black;
   font-size: 14px;
-  margin: 3% 0;
+  margin: 0 0 3%;
   width: 100%;
+}
+
+.seminar {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.seminar-content {
+  margin: 1% 5%;
+  line-height: 2;
 }
 
 .rights {
