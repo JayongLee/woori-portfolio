@@ -1,111 +1,217 @@
+
 * {
-  background-color: #161513;
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
-.nav-bar {
-  background-color: #222222;
-  display: flex;
-  height: 62px;
-  width: 100%;
-  align-content: center;
-  justify-content: space-evenly;
-}
-
-.nav-bar-button {
-  border: none;
-  background-color: #222222;
-  color: #fff;
-  font-size: 20px;
+p {
+  margin : 1px 1px;
 }
 
 .profile-image {
+  flex: 3;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 5% auto;
+  margin: 3% 5%;
 }
 
 .profile-image-detail {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  border: 2px solid #fff;
+  width: 150%;
+  height: 150%;
+  object-fit: contain;
 }
 
 .profile-intro-title {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 40px;
-  color: #fff;
-  margin: 2% 10%;
+  font-size: 200%;
+  font-weight: 1000;
+  color: #5477AD;
+  margin: 1% 10%;
+  object-fit: contain;
 }
 
 .profile-intro-sub {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #c5c5c5;
-  font-size: 18px;
-  margin: 3% 10%;
-  line-height: 25px;
-}
-
-.card-intro {
-  color: #ff8660;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  font-size: 30px;
-}
-
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 100%;
-}
-
-.card {
-  display: flex;
-  justify-content: center;
   flex-direction: column;
-  align-content: center;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: right;
+  color: black;
+  font-size: 18px;
+  line-height: 25px;
+  margin : 3% 10% 1%;
+  object-fit: contain;
+}
+
+.intro-icons {
+  margin : 1% 10% 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.icon {
+  padding: 0 0 0 30%;
+}
+
+.intro-content {
+  flex: 7;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
+  object-fit: contain;
+}
+
+.intro-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 3% 5%;
+  height: 30vh;
+  border-bottom: 10px black;
+}
+
+.list-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 3% 5% 1%;
+  /*flex-direction: column;*/
+}
+
+.title {
+  margin: 3% 5%;
+  font-size: 30px;
+  font-weight: 800;
+  color: #5477AD;
+}
+
+.list-set {
+  flex: 1;
+  margin: 3% 5%;
+  min-width: 40%;
+}
+
+.list-border {
+  width: 1px;
+  height: 60%;
+  background-color: #6B7280; /* 선 색상 */
+  position: absolute;
+  left: 150px; /* list-title의 width와 맞추기 */
+  top: 20%;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin: 5% 5%;
+  border-bottom: 0.5px solid darkgray;
+  gap: 20px;
+  height: 110px;
+}
+
+.list-content-title {
+  font-size: 17px;
+  font-weight: bold;
+  min-width: 120px;
+  white-space: nowrap;
+}
+
+.list-container-subtitle {
+  font-size: 14px;
+  color: #6B7280;
+  min-width: 120px;
+  white-space: nowrap;
+}
+
+.content-list {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: flex-start;
+  margin: 1% 1% 3% 10%;
+}
+
+.content-name-with-icon {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  margin: 2%;
+  width: 150px; /* 원하는 고정 길이로 설정 */
+  margin-bottom: 6px;
+}
+
+.project {
+  margin: 1% 5%;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: 0 5%;
+}
+
+.project-card {
+  background-color: #D6DCE5;
+  border-radius: 8px;
+  overflow: hidden;
   color: #fff;
-  width: 20%;
-  height: 20%;
-  background-color: #8491a0;
-  border-bottom-left-radius: 15%;
-  border-bottom-right-radius: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
 }
 
-.card-image {
-  width: 50%;
-  height: 30%;
-  margin: 3% auto;
+.project-thumbnail {
+  width: 90px;
+  height: 90px;
+  padding: 10px 0 0 0;
+  margin: 0 2%;
+  object-fit: cover;
 }
 
-.card-shape {
-  background-color: #8491a0;
-
-  margin: 10% 10%;
+.project-info {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
 }
 
-.card-title {
-  background-color: #8491a0;
-  font-size: 20px;
-  margin: 3% auto;
+/* 프로젝트 제목 */
+.project-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  margin: 0;
 }
 
-.card-content {
-  font-size: 15px;
-  color: #c5c5c5;
-  line-height: 20px;
-  background-color: #8491a0;
+/* 설명 */
+.project-desc {
+  font-size: 14px;
+  color: #333333;
+  margin: 0;
+}
+
+/* 태그 묶음 */
+.project-tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* 개별 태그 스타일 */
+.tag {
+  background-color: #333333;
+  padding: 3px 10px;
+  border-radius: 10px;
+  font-size: 12px;
 }
 
 .blog-intro {
@@ -120,35 +226,79 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin: 3% auto;
+  justify-content: flex-start;
+  align-content: flex-start;
+  margin: 0 5%;
 }
 
 .blog {
+  margin: 3% 5%;
+}
+
+.blog-card {
+  width: 100%;
+  margin: 1% 0;
+  padding: 1% 0;
+  border-bottom: 0.5px solid darkgray;
+}
+
+.blog-head {
   display: flex;
-  color: #fff;
-  width: 70%;
-  flex-direction: column;
-  justify-content: center;
-  margin: 1% auto;
+  justify-content: space-between;
+  margin: 0 0 1% 0;
 }
 
 .blog-title {
-  color: #fff;
   display: flex;
   justify-content: space-between;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .blog-date {
-  color: #c5c5c5;
+  color: #000;
   font-size: 12px;
 }
 
 .blog-content {
-  color: #c5c5c5;
-  font-size: 12px;
-  margin: 0px;
+  color: #000;
+  font-size: 14px;
+  margin: 0;
   line-height: 20px;
+}
+
+.others {
+  margin: 3% 5%;
+}
+
+.others-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin: 0 5%;
+}
+
+.others-card {
+  background-color: #D6DCE5;
+  border-radius: 8px;
+  overflow: hidden;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.others-title {
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.rights {
+  font-size: 12px;
+  color: #6B7280;
+  display: flex;
+  justify-content: center;
+  margin: 4% 0;
 }
