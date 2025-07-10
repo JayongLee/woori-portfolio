@@ -14,7 +14,7 @@ function addClickListeners(selector) {
 }
 
 addClickListeners('.blog-card');
-// addClickListeners('.project-card');
+addClickListeners('.project-card');
 addClickListeners('.icon');
 
 // function toggleCardContent(toggleBtn) {
