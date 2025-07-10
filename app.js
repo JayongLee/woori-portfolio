@@ -7,7 +7,7 @@ function addClickListeners(selector) {
     element.addEventListener('click', () => {
       const url = element.getAttribute('data-href');
       if (url) {
-        window.location.href = url;
+        window.open(url);
       }
     });
   });
